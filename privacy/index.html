@@ -208,6 +208,7 @@ button.tcard{font:inherit;text-align:left;cursor:pointer;padding:0;width:100%;ap
 @media (max-width:640px){.shbody{padding:8px 22px 48px}.shsec{grid-template-columns:1fr;gap:10px}.sheet .shimg{height:240px}}
 .navlinks a.on{color:#090B0E;background:#E8EDF2;box-shadow:0 0 22px rgba(119,223,255,.28)}
 .navlinks a.on:after{display:none}
+
 .pagefade{animation:pagein .7s cubic-bezier(.2,.7,.2,1) both}
 @keyframes pagein{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 .nextpg{padding-bottom:110px}
@@ -310,7 +311,6 @@ button.ftile:focus-visible{outline:2px solid #77DFFF;outline-offset:4px;border-r
 </a>
 <nav class="navlinks" aria-label="Κύρια πλοήγηση">
 <a href="#top" class="" aria-current="false"><span class="nt">Αρχική</span></a>
-<a href="#top" class="" aria-current="false"><span class="nt">Ο χώρος</span></a>
 <a href="#top" class="" aria-current="false"><span class="nt"><span class="nfull">Μέσα αποθεραπείας</span><span class="nshort">Μέσα</span></span></a>
 <a href="#top" class="" aria-current="false"><span class="nt"><span class="nfull">Συνδυαστικά πρωτόκολλα</span><span class="nshort">Πρωτόκολλα</span></span></a>
 <a href="#top" class="" aria-current="false"><span class="nt">Επικοινωνία</span></a>
@@ -325,7 +325,6 @@ button.ftile:focus-visible{outline:2px solid #77DFFF;outline-offset:4px;border-r
 </header>
 
 <main id="main">
-
 
 
 
@@ -411,7 +410,7 @@ button.ftile:focus-visible{outline:2px solid #77DFFF;outline-offset:4px;border-r
 <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 18px"><img src="/images/pop-logo.png" alt="" style="width: 40px; height: 40px; border-radius: 50%"><span class="disp" style="color: #E8EDF2; font-size: 16px; letter-spacing: .06em; font-weight: 600">POP · Performance Optimisation Project</span></div>
 <p style="margin: 0; line-height: 1.7; max-width: 42ch">Acute recovery &amp; wellness. Το περιεχόμενο του ιστότοπου έχει ενημερωτικό χαρακτήρα και δεν υποκαθιστά ιατρική διάγνωση ή θεραπεία. Συμβουλέψου τον γιατρό σου αν έχεις ιατρικό ζήτημα.</p>
 </div>
-<div><div class="mono" style="font-size: 10px; color: #E8EDF2; margin-bottom: 12px">Menu</div><a href="#top">Αρχική</a><a href="#top">Ο χώρος</a><a href="#top">Μέσα αποθεραπείας</a><a href="#top">Συνδυαστικά πρωτόκολλα</a><a href="#top">Επικοινωνία</a></div>
+<div><div class="mono" style="font-size: 10px; color: #E8EDF2; margin-bottom: 12px">Menu</div><a href="#top">Αρχική</a><a href="#top">Μέσα αποθεραπείας</a><a href="#top">Συνδυαστικά πρωτόκολλα</a><a href="#top">Επικοινωνία</a></div>
 <div><div class="mono" style="font-size: 10px; color: #E8EDF2; margin-bottom: 12px">Contact</div><a href="tel:+306940508530">+30 694 050 8530</a><a href="mailto:poproject2026@gmail.com">poproject2026@gmail.com</a><a href="https://www.instagram.com/p_o_project/" target="_blank" rel="noopener noreferrer">Instagram · @p_o_project</a></div>
 </div>
 <div class="mono" style="margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(139,146,155,.12); font-size: 10px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px"><span>© 2026 POP® — pop-project.com</span><span class="leglinks"><a href="#top">Όροι χρήσης</a><a href="#top">Απόρρητο &amp; cookies</a></span></div>
@@ -443,7 +442,6 @@ button.ftile:focus-visible{outline:2px solid #77DFFF;outline-offset:4px;border-r
 </a>
 <nav class="navlinks" aria-label="{{t.navlabel}}">
 <a href="#top" class="{{nc.home}}" onClick="{{go.home}}" aria-current="{{ac.home}}"><span class="nt">{{t.n0}}</span></a>
-<a href="#top" class="{{nc.facility}}" onClick="{{go.facility}}" aria-current="{{ac.facility}}"><span class="nt">{{t.n1}}</span></a>
 <a href="#top" class="{{nc.modalities}}" onClick="{{go.modalities}}" aria-current="{{ac.modalities}}"><span class="nt"><span class="nfull">{{t.n2}}</span><span class="nshort">{{t.n2s}}</span></span></a>
 <a href="#top" class="{{nc.packages}}" onClick="{{go.packages}}" aria-current="{{ac.packages}}"><span class="nt"><span class="nfull">{{t.n3}}</span><span class="nshort">{{t.n3s}}</span></span></a>
 <a href="#top" class="{{nc.booking}}" onClick="{{go.booking}}" aria-current="{{ac.booking}}"><span class="nt">{{t.n4}}</span></a>
@@ -485,6 +483,27 @@ button.ftile:focus-visible{outline:2px solid #77DFFF;outline-offset:4px;border-r
 </div>
 </div>
 <div class="scroll mono" aria-hidden="true" style="font-size: 10px; color: #8B929B"><span style="writing-mode: vertical-rl">Scroll</span><b></b></div>
+</section>
+
+<!-- GALLERY -->
+<section class="sec" id="gallery" aria-label="POP">
+<div class="wrap">
+<div class="fgrid">
+<figure class="fimg f1"><img src="/images/pop-recovery-room-athens.jpg" alt="{{t.altRoom}}" loading="lazy" style="object-position: 50% 62%"></figure>
+<figure class="fimg f2"><img src="/images/pop-centre-corridor.jpg" alt="{{t.altCorr}}" loading="lazy" style="object-position: 50% 35%"></figure>
+<figure class="fimg f7"><img src="/images/cold-plunge-room.jpg" alt="{{t.altCold}}" loading="lazy" style="object-position: 50% 60%"></figure>
+<figure class="fimg f3"><img src="/images/hyperbaric-oxygen-chamber.jpg" alt="{{t.altHbot}}" loading="lazy" style="object-position: 55% 50%"></figure>
+<figure class="fimg f4"><img src="/images/infrared-sauna.jpg" alt="{{t.altSauna}}" loading="lazy" style="object-position: 40% 55%"></figure>
+<figure class="fimg f5"><img src="/images/red-light-therapy-room.jpg" alt="{{t.altRed}}" loading="lazy" style="object-position: 40% 45%"></figure>
+<div class="f6 signband">
+<img src="/images/pop-neon-sign.png" alt="{{t.altSign}}" loading="lazy">
+<div style="padding: 32px 48px">
+<div class="mono" style="font-size: 10px; color: #77DFFF">POP® / On site</div>
+<div class="disp" style="font-size: clamp(28px, 3.4vw, 46px); line-height: 1.08; margin-top: 14px; color: #E8EDF2">Unlocking the<br>Athlete <span class="within">WITHIN</span>.</div>
+</div>
+</div>
+</div>
+</div>
 </section>
 
 <!-- HUMAN SYSTEM -->
@@ -559,34 +578,6 @@ button.ftile:focus-visible{outline:2px solid #77DFFF;outline-offset:4px;border-r
 </div>
 </div>
 </section>
-</div>
-</sc-if>
-<sc-if value="{{pg.facility}}" hint-placeholder-val="{{ false }}">
-<div class="pagefade">
-<!-- 01 FACILITY -->
-<section class="sec" id="facility">
-<div class="wrap">
-<div class="sechead">
-<div><div class="label mono">{{t.n1}}</div><h1 class="h2">{{t.facH}}</h1></div>
-</div>
-<div class="fgrid">
-<figure class="fimg f1"><img src="/images/pop-recovery-room-athens.jpg" alt="{{t.altRoom}}" loading="lazy" style="object-position: 50% 62%"></figure>
-<figure class="fimg f2"><img src="/images/pop-centre-corridor.jpg" alt="{{t.altCorr}}" loading="lazy" style="object-position: 50% 35%"></figure>
-<figure class="fimg f7"><img src="/images/cold-plunge-room.jpg" alt="{{t.altCold}}" loading="lazy" style="object-position: 50% 60%"></figure>
-<figure class="fimg f3"><img src="/images/hyperbaric-oxygen-chamber.jpg" alt="{{t.altHbot}}" loading="lazy" style="object-position: 55% 50%"></figure>
-<figure class="fimg f4"><img src="/images/infrared-sauna.jpg" alt="{{t.altSauna}}" loading="lazy" style="object-position: 40% 55%"></figure>
-<figure class="fimg f5"><img src="/images/red-light-therapy-room.jpg" alt="{{t.altRed}}" loading="lazy" style="object-position: 40% 45%"></figure>
-<div class="f6 signband">
-<img src="/images/pop-neon-sign.png" alt="{{t.altSign}}" loading="lazy">
-<div style="padding: 32px 48px">
-<div class="mono" style="font-size: 10px; color: #77DFFF">POP® / On site</div>
-<div class="disp" style="margin-top: 14px; font-size: clamp(26px,3vw,40px); line-height: 1.1; letter-spacing: -.02em">Unlocking the<br>Athlete <span class="within">WITHIN</span>.</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<div class="wrap nextpg"><a class="nextlink" href="#top" onClick="{{nx.go}}"><span class="mono" style="font-size: 11px; color: #8B929B">{{t.next}}</span><span class="disp nxname">{{nx.label}} <span class="nxar" aria-hidden="true">→</span></span></a></div>
 </div>
 </sc-if>
 <sc-if value="{{pg.modalities}}" hint-placeholder-val="{{ false }}">
@@ -728,7 +719,7 @@ button.ftile:focus-visible{outline:2px solid #77DFFF;outline-offset:4px;border-r
 <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 18px"><img src="/images/pop-logo.png" alt="" style="width: 40px; height: 40px; border-radius: 50%"><span class="disp" style="color: #E8EDF2; font-size: 16px; letter-spacing: .06em; font-weight: 600">POP · Performance Optimisation Project</span></div>
 <p style="margin: 0; line-height: 1.7; max-width: 42ch">{{t.disclaimer}}</p>
 </div>
-<div><div class="mono" style="font-size: 10px; color: #E8EDF2; margin-bottom: 12px">Menu</div><a href="#top" onClick="{{go.home}}">{{t.n0}}</a><a href="#top" onClick="{{go.facility}}">{{t.n1}}</a><a href="#top" onClick="{{go.modalities}}">{{t.n2}}</a><a href="#top" onClick="{{go.packages}}">{{t.n3}}</a><a href="#top" onClick="{{go.booking}}">{{t.n4}}</a></div>
+<div><div class="mono" style="font-size: 10px; color: #E8EDF2; margin-bottom: 12px">Menu</div><a href="#top" onClick="{{go.home}}">{{t.n0}}</a><a href="#top" onClick="{{go.modalities}}">{{t.n2}}</a><a href="#top" onClick="{{go.packages}}">{{t.n3}}</a><a href="#top" onClick="{{go.booking}}">{{t.n4}}</a></div>
 <div><div class="mono" style="font-size: 10px; color: #E8EDF2; margin-bottom: 12px">Contact</div><a href="tel:+306940508530">+30 694 050 8530</a><a href="mailto:poproject2026@gmail.com">poproject2026@gmail.com</a><a href="https://www.instagram.com/p_o_project/" target="_blank" rel="noopener noreferrer">Instagram · @p_o_project</a></div>
 </div>
 <div class="mono" style="margin-top: 56px; padding-top: 24px; border-top: 1px solid rgba(139,146,155,.12); font-size: 10px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px"><span>© 2026 POP® — pop-project.com</span><span class="leglinks"><a href="#top" onClick="{{go.terms}}">{{t.termsL}}</a><a href="#top" onClick="{{go.privacy}}">{{t.privL}}</a></span></div>
@@ -739,7 +730,7 @@ button.ftile:focus-visible{outline:2px solid #77DFFF;outline-offset:4px;border-r
 <button type="button" class="sheetbg" onClick="{{closeSheet}}" aria-label="{{t.close}}"></button>
 <div class="sheet">
 <button type="button" class="shclose" onClick="{{closeSheet}}" aria-label="{{t.close}}">✕</button>
-<div class="shimg"><img src="{{sh.img}}" alt="{{sh.name}}" style="object-position: {{sh.pos}}"></div>
+<div class="shimg"><img src="{{sh.si}}" alt="{{sh.name}}" style="object-position: {{sh.sp}}"></div>
 <div class="shbody">
 <div class="mono" style="font-size: 11px; color: #77DFFF">{{sh.mod}}</div>
 <h2 id="shtitle" style="margin: 14px 0 18px; font-size: clamp(32px,4vw,48px); line-height: 1.05; letter-spacing: -.03em; font-weight: 600">{{sh.name}}</h2>
@@ -774,7 +765,7 @@ button.ftile:focus-visible{outline:2px solid #77DFFF;outline-offset:4px;border-r
 </div>
 </template>
 <noscript><p style="color:#E8EDF2;padding:24px;font-family:sans-serif">POP – Performance Optimisation Project · +30 694 050 8530 · poproject2026@gmail.com</p></noscript>
-<script>window.__POP_TITLES = {"home": "POP – Performance Optimisation Project | Μέσα Αποθεραπείας & Επιστήμη, Αθήνα", "facility": "Ο χώρος | POP – Performance Optimisation Project", "modalities": "Μέσα Αποθεραπείας: Ερευνητικά Ευρήματα & Μηχανισμοί | POP", "packages": "Συνδυαστικά Πρωτόκολλα: Πιθανή Συνέργεια Μέσων Αποθεραπείας | POP", "booking": "Επικοινωνία | POP – Performance Optimisation Project, Αθήνα", "terms": "Όροι Χρήσης | POP – Performance Optimisation Project", "privacy": "Πολιτική Απορρήτου & Cookies | POP"};</script>
+<script>window.__POP_TITLES = {"home": "POP – Performance Optimisation Project | Μέσα Αποθεραπείας & Επιστήμη, Αθήνα", "modalities": "Μέσα Αποθεραπείας: Ερευνητικά Ευρήματα & Μηχανισμοί | POP", "packages": "Συνδυαστικά Πρωτόκολλα: Πιθανή Συνέργεια Μέσων Αποθεραπείας | POP", "booking": "Επικοινωνία | POP – Performance Optimisation Project, Αθήνα", "terms": "Όροι Χρήσης | POP – Performance Optimisation Project", "privacy": "Πολιτική Απορρήτου & Cookies | POP"};</script>
 <script>(function(){
   class DCLogic { constructor(props){ this.props = props || {}; this.state = {}; }
     setState(p){ Object.assign(this.state, typeof p === 'function' ? p(this.state) : p); schedule(); }
@@ -849,13 +840,13 @@ button.ftile:focus-visible{outline:2px solid #77DFFF;outline-offset:4px;border-r
 <script>
 class Component extends DCLogic {
   constructor(props) { super(props); let pg0 = 'home';
-    try { if (document.documentElement.getAttribute('data-site') === 'pop') { const S2K = { protocols: 'packages', contact: 'booking' }; let sg = location.pathname.split('/').filter(Boolean)[0]; sg = S2K[sg] || sg; if (['facility', 'modalities', 'packages', 'booking', 'terms', 'privacy'].indexOf(sg) >= 0) pg0 = sg; } } catch (e) {}
+    try { if (document.documentElement.getAttribute('data-site') === 'pop') { const S2K = { protocols: 'packages', contact: 'booking' }; let sg = location.pathname.split('/').filter(Boolean)[0]; sg = S2K[sg] || sg; if (['modalities', 'packages', 'booking', 'terms', 'privacy'].indexOf(sg) >= 0) pg0 = sg; } } catch (e) {}
     this.state = { lang: 'gr', sys: 0, prog: 0, sheet: -1, page: pg0 }; }
   _lock(on) { try { document.documentElement.classList.toggle('lock', !!on); } catch (e) {} }
   _site() { try { return document.documentElement.getAttribute('data-site') === 'pop'; } catch (e) { return false; } }
   _route(k, push) {
     if (!this._site()) return;
-    const R = { home: '/', facility: '/facility/', modalities: '/modalities/', packages: '/protocols/', booking: '/contact/', terms: '/terms/', privacy: '/privacy/' };
+    const R = { home: '/', modalities: '/modalities/', packages: '/protocols/', booking: '/contact/', terms: '/terms/', privacy: '/privacy/' };
     try { if (push && location.pathname !== R[k]) history.pushState({ page: k }, '', R[k]); } catch (e) {}
     const T = window.__POP_TITLES; if (T && T[k]) document.title = T[k];
   }
@@ -863,7 +854,7 @@ class Component extends DCLogic {
     if (this._site()) {
       const S2K = { protocols: 'packages', contact: 'booking' };
       const seg = S2K[location.pathname.split('/').filter(Boolean)[0]] || (location.pathname.split('/').filter(Boolean)[0] || 'home');
-      if (['facility', 'modalities', 'packages', 'booking', 'terms', 'privacy'].indexOf(seg) >= 0 && seg !== this.state.page) this.setState({ page: seg });
+      if (['modalities', 'packages', 'booking', 'terms', 'privacy'].indexOf(seg) >= 0 && seg !== this.state.page) this.setState({ page: seg });
       this._onPop = () => { const f = location.pathname.split('/').filter(Boolean)[0]; const sg = S2K[f] || f || 'home'; this._lock(false); this.setState({ page: sg, sheet: -1 }); this._route(sg, false); };
       window.addEventListener('popstate', this._onPop);
     }
@@ -880,7 +871,7 @@ class Component extends DCLogic {
     };
     document.addEventListener('scroll', this._onScroll, { capture: true, passive: true });
     const h = (location.hash || '').replace('#', '');
-    if (['facility', 'modalities', 'packages', 'booking'].indexOf(h) >= 0) this.setState({ page: h });
+    if (['modalities', 'packages', 'booking'].indexOf(h) >= 0) this.setState({ page: h });
   }
   componentWillUnmount() {
     document.removeEventListener('scroll', this._onScroll, { capture: true });
@@ -894,15 +885,15 @@ class Component extends DCLogic {
         code: 'el', skip: 'Μετάβαση στο περιεχόμενο', navlabel: 'Κύρια πλοήγηση',
         n0: 'Αρχική', n1: 'Ο χώρος', n2: 'Μέσα αποθεραπείας', n2s: 'Μέσα', n3: 'Συνδυαστικά πρωτόκολλα', n3s: 'Πρωτόκολλα', n4: 'Επικοινωνία',
         bookShort: 'Επικοινωνία', callUs: 'Κάλεσέ μας', refs: 'Βιβλιογραφία', bookNow: 'Επικοινωνία', explore: 'Εξερεύνησε τα μέσα αποθεραπείας',
-        heroText: 'Ένα κέντρο οξείας αποκατάστασης και αποθεραπείας, σχεδιασμένο με γνώμονα τη βιβλιογραφία, με σκοπό την αθλητική απόδοση και όχι μόνο.',
-        heroAlt: 'Ο χώρος αποκατάστασης του POP με υπερβαρικό θάλαμο, πάνελ κόκκινου φωτός και κρεβάτια θεραπείας',
+        heroText: 'Μελέτη οξείας αποκατάστασης και αποθεραπείας, σχεδιασμένη με γνώμονα τη βιβλιογραφία, με σκοπό την αθλητική απόδοση και όχι μόνο.',
+        heroAlt: 'Αίθουσα αποκατάστασης του POP με υπερβαρικό θάλαμο, πάνελ κόκκινου φωτός και κρεβάτια θεραπείας',
         facH: 'Ο χώρος\nτου POP.',
-        altRoom: 'Η κεντρική αίθουσα αποκατάστασης', altCorr: 'Διάδρομος με εξαγωνικό φωτισμό οροφής', capCorr: 'Corridor / Hex light', altHbot: 'Θάλαμος υπερβαρικού οξυγόνου με το λογότυπο POP', altSauna: 'Σάουνα υπερύθρων με κόκκινο φωτισμό', altRed: 'Πάνελ κόκκινου φωτός', altSign: 'Η φωτεινή πινακίδα POP στον τοίχο του κέντρου', altCold: 'Το δωμάτιο παγοθεραπείας με δύο δεξαμενές κρύου νερού',
+        altRoom: 'Η κεντρική αίθουσα αποκατάστασης', altCorr: 'Διάδρομος με εξαγωνικό φωτισμό οροφής', capCorr: 'Corridor / Hex light', altHbot: 'Θάλαμος υπερβαρικού οξυγόνου με το λογότυπο POP', altSauna: 'Σάουνα υπερύθρων με κόκκινο φωτισμό', altRed: 'Πάνελ κόκκινου φωτός', altSign: 'Η φωτεινή πινακίδα POP', altCold: 'Το δωμάτιο παγοθεραπείας με δύο δεξαμενές κρύου νερού',
         modH: 'Τα μέσα αποθεραπείας\nπου μας ενδιαφέρουν.', modP: 'Κάθε μέσο αποθεραπείας επιδρά μέσω διαφορετικών φυσιολογικών μηχανισμών.',
         app: 'Πεδίο εφαρμογής', sess: 'Τυπική διάρκεια', soon: 'Σύντομα',
         cryoH: 'Παγοθεραπεία', cryoP: 'Έκθεση στο κρύο για λίγα λεπτά. Χρησιμοποιείται συχνά από αθλητές μετά από έντονο φορτίο. Έρχεται σύντομα στο POP.',
         sysH: 'Το σώμα δεν αναρρώνει\nσε κομμάτια.', sysP: 'Ενέργεια, νευρικό σύστημα, ιστοί, κυκλοφορία, ύπνος και στρες λειτουργούν ως ένα συνδεδεμένο σύστημα. Το ανθρώπινο σώμα συμπεριφέρεται σαν ένα καλοκουρδισμένο ρολόι που λειτουργεί σε κύκλους.', related: 'Σχετικά μέσα αποθεραπείας',
-        appH: 'Όχι μια λίστα θεραπειών.\nΜια διαδικασία.', appP1: 'Στον χώρο μας, οι εφαρμογές και τα πρωτόκολλα δεν είναι τυχαίοι συνδυασμοί θεραπειών. Σχεδιάζονται πάντα με βάση τη φυσιολογία, τη διαθέσιμη επιστημονική βιβλιογραφία και την πιθανότητα οι επιμέρους δράσεις να αλληλοσυμπληρώνονται, προσφέροντας μια πιο ολοκληρωμένη προσέγγιση στην οξεία αποκατάσταση, την ευεξία και την υποστήριξη της απόδοσης του αθλητή ή του ασκούμενου.',
+        appH: 'Όχι μια λίστα θεραπειών.\nΜια διαδικασία.', appP1: 'Οι εφαρμογές και τα πρωτόκολλά μας δεν είναι τυχαίοι συνδυασμοί θεραπειών. Σχεδιάζονται πάντα με βάση τη φυσιολογία, τη διαθέσιμη επιστημονική βιβλιογραφία και την πιθανότητα οι επιμέρους δράσεις να αλληλοσυμπληρώνονται, προσφέροντας μια πιο ολοκληρωμένη προσέγγιση στην οξεία αποκατάσταση, την ευεξία και την υποστήριξη της απόδοσης του αθλητή ή του ασκούμενου.',
         appP2: 'Αν και η συνεργιστική δράση κάθε συνδυασμού δεν έχει αποδειχθεί σε όλες τις περιπτώσεις με κλινικές μελέτες, η επιστημονική λογική πίσω από την επιλογή των πρωτοκόλλων και τη σειρά με την οποία εφαρμόζονται αποτελεί τον πυρήνα της προσέγγισής μας.',
         sb1: 'Η αποκατάσταση είναι μια πολυπαραγοντική διαδικασία που απαιτεί στοχευμένη προσέγγιση.',
         sb2: 'Διαφορετικά μέσα αποθεραπείας επιδρούν μέσω διαφορετικών φυσιολογικών μηχανισμών. Με βάση την ανθρώπινη φυσιολογία και τη διαθέσιμη επιστημονική βιβλιογραφία, παρουσιάζουμε τρία σενάρια συνδυαστικής εφαρμογής που παρουσιάζουν ενδιαφέρον προς διερεύνηση, λόγω της πιθανής συνέργειας και αλληλεπίδρασης των μηχανισμών τους.',
@@ -918,15 +909,15 @@ class Component extends DCLogic {
         code: 'en', skip: 'Skip to content', navlabel: 'Main navigation',
         n0: 'Home', n1: 'The Space', n2: 'Recovery Modalities', n2s: 'Modalities', n3: 'Combined Protocols', n3s: 'Protocols', n4: 'Contact',
         bookShort: 'Contact', callUs: 'Call us', refs: 'References', bookNow: 'Contact', explore: 'Explore the recovery modalities',
-        heroText: 'A centre for acute recovery and recuperation, designed with the scientific literature as its guide, aimed at athletic performance and beyond.',
+        heroText: 'A study of acute recovery and recuperation, designed with the scientific literature as its guide, aimed at athletic performance and beyond.',
         heroAlt: 'The POP recovery room with a hyperbaric chamber, red light panel and treatment tables',
         facH: 'Inside\nPOP.',
-        altRoom: 'The main recovery room', altCorr: 'Corridor with hexagonal ceiling lights', capCorr: 'Corridor / Hex light', altHbot: 'Hyperbaric oxygen chamber with the POP logo', altSauna: 'Infrared sauna with red lighting', altRed: 'Red light panel', altSign: 'The illuminated POP sign on the center wall', altCold: 'The cold plunge room with two cold-water tubs',
+        altRoom: 'The main recovery room', altCorr: 'Corridor with hexagonal ceiling lights', capCorr: 'Corridor / Hex light', altHbot: 'Hyperbaric oxygen chamber with the POP logo', altSauna: 'Infrared sauna with red lighting', altRed: 'Red light panel', altSign: 'The illuminated POP sign', altCold: 'The cold plunge room with two cold-water tubs',
         modH: 'The recovery modalities\nwe study.', modP: 'Each recovery modality acts through different physiological mechanisms.',
         app: 'Field of application', sess: 'Typical duration', soon: 'Coming soon',
         cryoH: 'Cold therapy', cryoP: 'A few minutes of cold exposure, often used by athletes after heavy training. Coming soon to POP.',
         sysH: 'The body doesn’t recover\nin pieces.', sysP: 'Energy, nervous system, tissue, circulation, sleep and stress work as one connected system. The human body behaves like a finely tuned clock that runs in cycles.', related: 'Related modalities',
-        appH: 'Not a list of treatments.\nA process.', appP1: 'At POP, our applications and protocols are not random combinations of treatments. They are always designed around physiology, the available scientific literature and the likelihood that individual effects complement one another, offering a more complete approach to acute recovery, wellness and performance support for athletes and active people.',
+        appH: 'Not a list of treatments.\nA process.', appP1: 'Our applications and protocols are not random combinations of treatments. They are always designed around physiology, the available scientific literature and the likelihood that individual effects complement one another, offering a more complete approach to acute recovery, wellness and performance support for athletes and active people.',
         appP2: 'Although the synergistic effect of every combination has not been proven by clinical studies in all cases, the scientific reasoning behind which protocols we choose, and the order in which they are applied, is at the core of our approach.',
         sb1: 'Recovery is a multifactorial process that calls for a targeted approach.',
         sb2: 'Different recovery modalities act through different physiological mechanisms. Based on human physiology and the available scientific literature, we present three combined-application scenarios that are worth exploring because of the potential synergy and interaction of their mechanisms.',
@@ -1020,7 +1011,7 @@ class Component extends DCLogic {
         desc: gr ? 'Ελεγχόμενη βύθιση σε κρύο νερό για λίγα λεπτά. Χρησιμοποιείται συχνά από αθλητές μετά από έντονο φορτίο· η έρευνα για τα οφέλη και τα όριά της συνεχίζεται.' : 'Controlled immersion in cold water for a few minutes. Often used by athletes after heavy training; research on its benefits and limits is ongoing.',
         app: gr ? 'Ανάκαμψη μετά από έντονο φορτίο' : 'Recovery after heavy training' }
     ].map((m, i) => ({ ...m, sess: [gr ? '45–60 λεπτά' : '45–60 min', gr ? '30 λεπτά' : '30 min', gr ? '12 λεπτά' : '12 min', gr ? '20 λεπτά' : '20 min', gr ? '3–10 λεπτά' : '3–10 min'][i], alt: m.name, aria: m.name + ' — ' + t.more, open: () => { this._lock(true); this.setState({ sheet: i }); }, ev: EV[i].ev, lim: EV[i].lim, nev: EV[i].ev.length }));
-    const sh = this.state.sheet >= 0 ? tech[this.state.sheet] : tech[0];
+    const sh0 = this.state.sheet >= 0 ? tech[this.state.sheet] : tech[0]; const sh = Object.assign({}, sh0, { si: sh0.si || sh0.img, sp: sh0.sp || sh0.pos });
     const M = [
       { code: '01', en: 'Cellular Energy', gr: 'Κυτταρική ενέργεια', ex: 'Cellular energy', tg: 'Τα μιτοχόνδρια παράγουν το ATP που τροφοδοτεί κάθε μυϊκή σύσπαση και κάθε διαδικασία επιδιόρθωσης.', te: 'Mitochondria produce the ATP that powers every muscle contraction and every repair process.', rel: 'Red Light · HBOT' },
       { code: '02', en: 'Nervous System Regulation', gr: 'Ρύθμιση νευρικού συστήματος', ex: 'Nervous system regulation', tg: 'Η ισορροπία ανάμεσα στο συμπαθητικό νευρικό σύστημα («δράση») και στο παρασυμπαθητικό («αποκατάσταση») επηρεάζει πόσο γρήγορα και αποτελεσματικά το σώμα περνά από την καταπόνηση στην ανάκαμψη.', te: 'The balance between the sympathetic (“fight or flight”) and parasympathetic (“rest and recover”) nervous systems shapes how quickly and effectively the body moves from stress to recovery.', rel: 'HBOT · Sauna' },
@@ -1036,13 +1027,13 @@ class Component extends DCLogic {
     const steps = gr ? [
       { code: '01 · Assess', h: 'Αξιολόγηση', p: 'Προπονητικό φορτίο, ύπνος, ενοχλήσεις, στόχοι. Μια σύντομη συζήτηση πριν ξεκινήσουμε.' },
       { code: '02 · Select', h: 'Επιλογή', p: 'Επιλογή μέσων αποθεραπείας και σειράς εφαρμογής με βάση τον στόχο.' },
-      { code: '03 · Recover', h: 'Αποκατάσταση', p: 'Εφαρμογή σε ελεγχόμενο περιβάλλον, με καθοδήγηση.' },
-      { code: '04 · Reassess', h: 'Επαναξιολόγηση', p: 'Βλέπουμε πώς ανταποκρίθηκες και προσαρμόζουμε το επόμενο βήμα.' }
+      { code: '03 · Recover', h: 'Αποκατάσταση', p: 'Εφαρμογή των μέσων σύμφωνα με τα δεδομένα της βιβλιογραφίας.' },
+      { code: '04 · Reassess', h: 'Επαναξιολόγηση', p: 'Παρατήρηση της ανταπόκρισης και εφαρμογή των κατάλληλων προσαρμογών.' }
     ] : [
       { code: '01 · Assess', h: 'Assess', p: 'Training load, sleep, discomfort, goals. A short conversation before we start.' },
       { code: '02 · Select', h: 'Select', p: 'Choosing recovery modalities and their order of application based on the goal.' },
-      { code: '03 · Recover', h: 'Recover', p: 'Guided application in a controlled environment.' },
-      { code: '04 · Reassess', h: 'Reassess', p: 'We see how you responded and adjust the next step.' }
+      { code: '03 · Recover', h: 'Recover', p: 'Applying the modalities in line with the published evidence.' },
+      { code: '04 · Reassess', h: 'Reassess', p: 'Observing the response and applying the appropriate adjustments.' }
     ];
     const im = { cold: B + 'cold-therapy.jpg', comp: B + 'compression-boots.jpg', red: B + 'red-light-therapy-panel.jpg', sauna: B + 'infrared-sauna.jpg', hbot: B + 'hyperbaric-oxygen-chamber.jpg' };
     const nm = { cold: gr ? 'Παγοθεραπεία' : 'Cold plunge', comp: gr ? 'Πρεσσοθεραπεία' : 'Compression', red: 'Red light therapy', sauna: gr ? 'Σάουνα υπερύθρων' : 'Infrared sauna', hbot: gr ? 'Υπερβαρικό οξυγόνο' : 'Hyperbaric oxygen' };
@@ -1145,7 +1136,7 @@ class Component extends DCLogic {
         ]
       }
     };
-    const P = ['home', 'facility', 'modalities', 'packages', 'booking', 'terms', 'privacy'];
+    const P = ['home', 'modalities', 'packages', 'booking', 'terms', 'privacy'];
     const page = this.state.page;
     const go = {}, pg = {}, nc = {}, ac = {};
     P.forEach((k) => {
@@ -1155,8 +1146,8 @@ class Component extends DCLogic {
     pg.legal = page === 'terms' || page === 'privacy';
     const lg = Object.assign({}, LEGAL[page === 'privacy' ? 'privacy' : 'terms']);
     lg.otherGo = page === 'privacy' ? go.terms : go.privacy; lg.otherLabel = page === 'privacy' ? t.termsL : t.privL;
-    const names = { facility: t.n1, modalities: t.n2, packages: t.n3, booking: t.n4 };
-    const ni = P.indexOf(page); const nk = ni > 0 && ni < 4 ? P[ni + 1] : 'booking';
+    const names = { modalities: t.n2, packages: t.n3, booking: t.n4 };
+    const ni = P.indexOf(page); const nk = ni > 0 && ni < 3 ? P[ni + 1] : 'booking';
     const nx = { label: names[nk], go: go[nk] };
     return {
       t, tech, modules, cur, steps, pkgs, articles, pg, go, nc, ac, nx, lg, sh, sheetOpen: this.state.sheet >= 0, closeSheet: () => { this._lock(false); this.setState({ sheet: -1 }); },
