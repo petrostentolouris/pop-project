@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pop-project.com/sitemap.xml
